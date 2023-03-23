@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="roundEditText" parent="android:Widget.Material.EditText">
+        <item name="android:background">@drawable/edittext_shape</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColorHint">#A98472</item>
+
+    </style>
+
+    <style name="myTextView" parent="android:Widget.Material.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
