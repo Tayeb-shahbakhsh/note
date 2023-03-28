@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="30dp"
     app:cardElevation="0dp"
@@ -12,23 +12,50 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title"
-            style=""
+            style="@style/myTextViewBold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/test_date"
+            style="@style/myTextViewNormal"
+            app:layout_constraintEnd_toStartOf="@+id/titleTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/captionTextView"
+            style="@style/myTextViewNormal"
+            android:paddingTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="تست سمبل گل لاله در دریا مانده رفته دریا چرا دریا چرا الاله ۱ دریت چرا دریا چرا در اینجا چه میکنی درست را بخوان بدان که انروز همان روز است و بس بدان که ما در دریای خروشان مرگ سرازیر شد ایم."
+            android:text="@string/test"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+
+        <Button
+            android:id="@+id/openButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:text="@string/open"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/captionTextView"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
