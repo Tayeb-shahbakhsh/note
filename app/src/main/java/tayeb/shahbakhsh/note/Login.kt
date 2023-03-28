@@ -2,6 +2,7 @@ package tayeb.shahbakhsh.note
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -19,12 +20,17 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val usernameEditText = binding.usernameEditText.text
+        val passwordEditText = binding.passwordEditText.text
+
         binding.signinButton.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
+            val intent = Intent(this, MainActivity::class.java)
+            if (usernameEditText.isNotBlank() || passwordEditText.isNotBlank()) {
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "لطفا مقادیر لازم را به درستی پر کنید!", Toast.LENGTH_SHORT)
+                    .show()
+            }
         }
-
     }
-
-
 }
