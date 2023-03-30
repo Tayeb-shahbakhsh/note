@@ -29,7 +29,7 @@
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <EditText
-            android:id="@+id/titleTextView"
+            android:id="@+id/titleEditText"
             style="@style/roundEditText"
             android:layout_width="350dp"
             android:layout_height="60dp"
@@ -40,7 +40,7 @@
 
 
         <EditText
-            android:id="@+id/captionTextView"
+            android:id="@+id/captionEditText"
             style="@style/roundEditText"
             android:layout_width="360dp"
             android:layout_height="200dp"
@@ -50,7 +50,7 @@
             android:textAppearance="@style/myTextViewBold" />
 
         <Button
-            android:id="@+id/signinButton"
+            android:id="@+id/saveNoteButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
