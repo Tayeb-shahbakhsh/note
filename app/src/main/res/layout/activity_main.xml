@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bottom_sheet_shape"
+        android:paddingTop="8dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
@@ -62,6 +63,7 @@
         android:id="@+id/addNoteFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:tint="@color/white"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:src="@drawable/round_add_24"
