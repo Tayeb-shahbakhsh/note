@@ -2,6 +2,7 @@ package tayeb.shahbakhsh.note
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import tayeb.shahbakhsh.note.databinding.ActivityMainBinding
@@ -31,8 +32,10 @@ class MainActivity : AppCompatActivity() {
             hidden = !hidden
             if (hidden) {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+                binding.dimBackgroundView.visibility = View.GONE
             } else {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                binding.dimBackgroundView.visibility = View.VISIBLE
             }
         }
     }
