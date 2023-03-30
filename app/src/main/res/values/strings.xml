@@ -17,4 +17,7 @@
     <string name="test_date">۱۴۰۲/۰۶/۰۲</string>
     <string name="open">باز کردن</string>
     <string name="new_note">جدید</string>
+    <string name="noteTitle">موضوع ...</string>
+    <string name="note">یادداشت ...</string>
+    <string name="save">ثبت کردن</string>
 </resources>
